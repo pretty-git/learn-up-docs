@@ -2,21 +2,24 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "菜鸟进阶",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      // { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Vue',
+        collapsed: true,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'MVC和MVVM', link: '/mvc-mvvm' },
+          { text: 'Vue的生命周期', link: '/vue-lifecycle' },
+          { text: 'Vue的渲染流程', link: '/vue-render' },
+          { text: 'Vue的响应式原理', link: '/vue-reactive' },
+          { text: '虚拟DOM', link: '/vue-virtual-dom' },
+
         ]
       }
     ],
